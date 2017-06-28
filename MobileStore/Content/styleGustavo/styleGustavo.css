@@ -1,0 +1,49 @@
+﻿body {
+    background-color:#808080;
+    overflow-x:hidden;
+}
+
+
+div.bg-danger {
+    background-color: #808080;
+    margin-top:-120px;
+}
+a{
+    color:#000000;
+}
+
+.fullInGlob {
+    background-color:#5c5252;
+    width: 1000px;
+    height:182px;
+    margin-left:-220px;
+    margin-top:-250px;
+}
+
+
+#allITems {
+    margin-left: 270px;
+    background-color: #5c5252;
+}
+
+#headerLINKS{
+    margin-left:400px;
+    margin-top:-100px;
+}
+
+
+#mover{
+    margin-left:-120px;
+    margin-top:-50px;
+}
+
+.stayContainer {
+    width: 300px;
+    height: 250px;
+    overflow: hidden; /* Faz o div não aumentar a altura por causa da imagem */
+    margin-left:-160px;
+}
+img {
+    border: 1px solid red;
+    width: 100%;
+}

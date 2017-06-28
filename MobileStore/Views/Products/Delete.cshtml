@@ -1,0 +1,67 @@
+﻿@model MobileStore.Models.Product
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body style="background-color:#808080;">
+    <link href="@Url.Content("~/content/bootstrap.css")" rel="stylesheet" />
+    <div style="width: 300px;height: 250px;overflow: hidden; /* Faz o div não aumentar a altura por causa da imagem */margin-left:0px;;">
+        <img src="~/Content/styleGustavo/projectImage.jpg" style="border: 1px solid red;width: 100%;" />
+    </div>
+    <div style="margin-top: -270px; margin-left:320px; background-color:#5c5252; text-align:center; height:182px; width:1000px;">
+        <h1 style="font-size:100px;">
+            <small class="text-danger">
+                <a>@Html.ActionLink("Products", "Index", "Products")</a>
+            </small>
+        </h1>
+    </div>
+    <div class="englobarResultado" style="background-color:#5c5252;">
+        <div style="margin-left:500px;margin-top:200px; height:200px; margin-top:150px;">
+            <br /><br /><br />
+            <dl class="dl-horizontal style="margin-top:200px;">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Brand)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Brand)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Models)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Models)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Price)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Price)
+                </dd>
+
+            </dl>
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-actions no-color">
+                    <input type="submit" value="Confirm" class="btn btn-default" /> |
+                    <button class="btn btn-default">@Html.ActionLink("Back to List", "Index")</button>
+                </div>
+            }
+        </div>
+</body>
+</html>

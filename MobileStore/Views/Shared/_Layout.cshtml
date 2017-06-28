@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,
+initial-scale=1.0" charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/content/bootstrap.css")"rel="stylesheet" />
+    <link href="@Url.Content("~/content/styleGustavo/styleGustavo.css")" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="container">
+            <div class="stayContainer">
+                <img src="~/Content/styleGustavo/projectImage.jpg" />
+            </div>
+            <h1 id="mover"> @Html.ActionLink("Register new Mobile", "Create")</h1>
+            <div class="page-header bg-danger" id="headerLINKS">
+                <div class="fullInGlob">
+                <h1 style="text-align:center; background-color:#5c5252; margin-top:-200px; font-size:100px;">
+                    <small class="text-danger">
+                        <a>@Html.ActionLink("Products", "Index", "Products")</a>
+                    </small>
+                </h1></div>
+            </div>
+        </div>
+       <!--<div class="row">
+            <div class="col-xs-3 col-md-3 bg-success">
+                <ul class="nav nav-pills nav-stacked">
+                    <li role="presentation" class="active"><a href="#">Home</a></li>
+                    <li role="presentation">
+                        
+                    </li>
+                </ul>
+            </div>-->
+            <div class="col-xs-9 col-md-9" id="allITems">
+                <br />
+                @RenderBody()
+            </div>
+        </div>
+        <br />
+    </div>
+    <script src="@Url.Content("~/scripts/jquery3.1.1.js")"></script>
+    <script src="@Url.Content("~/scripts/bootstrap.js")"></script>
+</body>
+</html>
